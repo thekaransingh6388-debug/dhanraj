@@ -6,25 +6,23 @@
     <title>PANKAJ BHARDWAJ • Stock Market Elite</title>
     <meta name="description" content="Join PANKAJ BHARDWAJ for NIFTY BANKNIFTY & Stock Options - Daily 3-4 calls, 80-90% accuracy">
     
-    <!-- Meta Pixel Code (NEW ID) -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '2243001716506895');
-    fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=2243001716506895&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Meta Pixel Code -->
-    
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2401847980292799');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2401847980292799&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
     <style>
         * {
             margin: 0;
@@ -264,20 +262,31 @@
 </div>
 
 <script>
-    // Facebook Pixel click tracking for both buttons
+    // Facebook Pixel click tracking for both buttons - IMPROVED TRACKING
     const topBtn = document.getElementById('joinTop');
     const bottomBtn = document.getElementById('joinBottom');
     
     function trackJoin(event) {
         if (typeof fbq === 'function') {
-            fbq('track', 'Lead', { content_name: 'Telegram_Join_PANKAJ' });
-            fbq('trackCustom', 'JoinTelegramClick');
+            // Lead event track - ye Meta Ads mein dikhega
+            fbq('track', 'Lead', { 
+                content_name: 'Telegram_Join_PANKAJ',
+                content_category: 'Subscribe_Button',
+                value: 1,
+                currency: 'INR'
+            });
+            console.log('✅ Pixel Lead event tracked for PANKAJ BHARDWAJ');
         }
-        // link works normally, no interruption
+        // Link kaam karega normally - koi rok nahi
     }
     
-    if (topBtn) topBtn.addEventListener('click', trackJoin);
-    if (bottomBtn) bottomBtn.addEventListener('click', trackJoin);
+    // Event listeners for both buttons
+    if (topBtn) {
+        topBtn.addEventListener('click', trackJoin);
+    }
+    if (bottomBtn) {
+        bottomBtn.addEventListener('click', trackJoin);
+    }
 </script>
 
 </body>
